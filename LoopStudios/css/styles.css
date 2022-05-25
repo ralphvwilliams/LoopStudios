@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position:; */
+}
+
+/*Navbar inside hero-content*/
+.hero-content {
+  padding: 0px 165px 146px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 0 130px;
+}
+
+.right-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.close-btn {
+  display: none;
+}
+
+/*Textbox inside hero-content*/
+.textbox {
+  padding: 40px;
+  border: 2px solid #fff;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  width: 650px;
+  font-size: 48px;
+  /* line-height: 70px; */
+}
+
+/*Section 1 */
+.section1 {
+  position: relative;
+  height: 500px;
+  margin: 160px 165px 184px;
+}
+
+.section-1-text {
+  position: absolute;
+  background-color: #fff;
+  width: 541px;
+  padding: 96px 40px 0px 96px;
+  right: 0;
+  bottom: 0;
+}
+
+.section-1-text h2 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.section-1-text p {
+  font-family: "Alata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+/*Section 2 */
+
+.section2 {
+  margin: 160px 165px 184px;
+}
+
+.section2-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.section2-text h3 {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+  color: #000000;
+}
+
+.section2-text button {
+  font-family: "Alata";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 13px 40px;
+  border: none;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px 0px;
+  margin: 80px 0px 0;
+}
+
+.card {
+  position: relative;
+}
+
+.card p {
+  position: absolute;
+  z-index: 1;
+  bottom: 32px;
+  left: 40px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 32px;
+  /* or 100% */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #000000;
+  /* height: 160px; */
+  margin-top: 96px;
+}
+
+.footer-info {
+  margin: 0 160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-footer img {
+  margin-top: 44px;
+}
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.footer-icons {
+  margin-top: 44px;
+}
+.footer-icons img {
+  margin-right: 16px;
+}
+
+.right-footer p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+  margin-top: 24px;
+  color: #ffffff;
+  font-family: "Alata";
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 48px;
+}
+
+@media only screen and (max-width: 850px) {
+  .hero-content {
+    padding: 0px 24px 146px;
+  }
+
+  nav {
+    padding: 40px 0px 163px;
+    display: block;
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    top: 48px;
+    right: 30px;
+  }
+
+  .left-navbar img {
+    width: 144px;
+    height: 24px;
+  }
+
+  .right-navbar {
+    display: none;
+    margin-top: 158px;
+  }
+
+  .right-navbar li {
+    margin-bottom: 24px;
+  }
+  .right-navbar a {
+    text-transform: uppercase;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .close-btn {
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 30px;
+  }
+
+  .textbox {
+    width: 100%;
+    font-size: 100%;
+    padding: 24px;
+  }
+
+  /*Section 1 */
+  .section1 {
+    margin: 95px 24px;
+    height: fit-content;
+  }
+
+  .section-1-image,
+  .section-1-image img {
+    width: 100%;
+  }
+
+  .section-1-text {
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-1-text h2 {
+    width: 100%;
+    font-size: 32px;
+    margin: 48px 0 16px;
+  }
+
+  /*Section 2 */
+  .section2 {
+    margin: 0px 24px;
+  }
+
+  .section2-text {
+    width: 100%;
+    position: relative;
+  }
+
+  .section2-text button {
+    display: none;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+  }
+
+  .section2-text h3 {
+    font-size: 32px;
+  }
+  .cards-container {
+    margin: 48px 0 0;
+  }
+
+  .card {
+    width: 327px;
+    height: 120px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .footer-info {
+    display: block;
+    text-align: center;
+  }
+  .footer-list {
+    display: block;
+  }
+
+  .footer-list li {
+    margin-top: 16px;
+  }
+
+  .right-footer p {
+    margin-bottom: 0;
+  }
+}
